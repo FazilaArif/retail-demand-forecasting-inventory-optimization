@@ -1,0 +1,9 @@
+pandas
+numpy
+sqlalchemy
+dbt
+prophet
+lightgbm
+statsmodels
+streamlit
+tableau-api-lib
