@@ -9,3 +9,4 @@ streamlit
 tableau-api-lib
 google-cloud-bigquery
 snowflake-connector-python
+scikit-learn
