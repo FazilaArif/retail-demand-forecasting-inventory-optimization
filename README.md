@@ -10,3 +10,8 @@ Languages: Python, SQL
 Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
 
 Tools: Power BI, GitHub
+
+3. Dataset
+Source: Kaggle retail dataset (or synthetic data if applicable)
+
+Features: Sales, product categories, customer demographics
