@@ -15,3 +15,13 @@ Tools: Power BI, GitHub
 Source: Kaggle retail dataset (or synthetic data if applicable)
 
 Features: Sales, product categories, customer demographics
+
+5. Project Structure
+data/ → raw and processed datasets
+
+notebooks/ → Jupyter notebooks for analysis
+
+scripts/ → Python scripts for preprocessing and modeling
+
+visuals/ → Power BI dashboards or charts
+
