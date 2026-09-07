@@ -5,3 +5,7 @@ df = pd.read_csv("data/raw/sell_prices.csv")
 
 # Show first 5 rows
 print(df.head())
+
+print(df.info())
+print(df.describe())
+print(df.isnull().sum())
