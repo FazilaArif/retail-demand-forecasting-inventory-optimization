@@ -1,0 +1,123 @@
+version: 2
+
+models:
+
+  - name: stg_sales
+    description: "Cleaned and standardized sales data from the fact sales table."
+    columns:
+      - name: id
+        description: "Unique sales record identifier."
+        tests:
+          - not_null
+
+      - name: item_id
+        description: "Product identifier."
+        tests:
+          - not_null
+
+      - name: store_id
+        description: "Store identifier."
+        tests:
+          - not_null
+
+      - name: date
+        description: "Sales date."
+        tests:
+          - not_null
+
+      - name: sales
+        description: "Units sold."
+        tests:
+          - not_null
+
+  - name: daily_sales
+    description: "Daily aggregated sales by product and store."
+    columns:
+      - name: date
+        description: "Sales date."
+        tests:
+          - not_null
+
+      - name: item_id
+        description: "Product identifier."
+        tests:
+          - not_null
+
+      - name: store_id
+        description: "Store identifier."
+        tests:
+          - not_null
+
+      - name: total_sales
+        description: "Total units sold for the day."
+        tests:
+          - not_null
+
+  - name: weekly_sales
+    description: "Weekly aggregated sales by product and store."
+    columns:
+      - name: week_start_date
+        description: "Starting date of the sales week."
+        tests:
+          - not_null
+
+      - name: item_id
+        description: "Product identifier."
+        tests:
+          - not_null
+
+      - name: store_id
+        description: "Store identifier."
+        tests:
+          - not_null
+
+      - name: weekly_sales
+        description: "Total weekly units sold."
+        tests:
+          - not_null
+
+  - name: monthly_sales
+    description: "Monthly aggregated sales by product and store."
+    columns:
+      - name: month_start_date
+        description: "Starting date of the sales month."
+        tests:
+          - not_null
+
+      - name: item_id
+        description: "Product identifier."
+        tests:
+          - not_null
+
+      - name: store_id
+        description: "Store identifier."
+        tests:
+          - not_null
+
+      - name: monthly_sales
+        description: "Total monthly units sold."
+        tests:
+          - not_null
+
+  - name: sales_mart
+    description: "Clean daily sales mart prepared for analytics, forecasting, and dashboards."
+    columns:
+      - name: date
+        description: "Sales date."
+        tests:
+          - not_null
+
+      - name: item_id
+        description: "Product identifier."
+        tests:
+          - not_null
+
+      - name: store_id
+        description: "Store identifier."
+        tests:
+          - not_null
+
+      - name: total_sales
+        description: "Daily total sales."
+        tests:
+          - not_null
