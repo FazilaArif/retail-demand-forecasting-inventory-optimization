@@ -25,3 +25,20 @@ scripts/ → Python scripts for preprocessing and modeling
 
 visuals/ → Power BI dashboards or charts
 
+6. Methodology
+Data cleaning and preprocessing
+
+Exploratory data analysis (EDA)
+
+Feature engineering
+
+Model building (e.g., regression, forecasting)
+
+Visualization and reporting
+
+7. Results
+Key findings (e.g., top-selling products, seasonal demand patterns).
+
+Model performance metrics (accuracy, RMSE, etc.).
+
+Screenshots of dashboards or charts.
