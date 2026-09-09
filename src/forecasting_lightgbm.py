@@ -192,7 +192,12 @@ output_file = "outputs/lightgbm_predictions.csv"
 forecast_output.to_csv(
     output_file,
     index=False
-)
+)# Save trained LightGBM model
+model_file = "outputs/lightgbm_model.pkl"
+
+joblib.dump(model, model_file)
+
+print(f"✅ LightGBM model saved to: {model_file}")
 
 print(f"✅ Forecast predictions saved to: {output_file}")
 

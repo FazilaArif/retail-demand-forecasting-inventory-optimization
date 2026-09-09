@@ -11,3 +11,6 @@ data/raw/sell_prices.csv
 logs/
 target/
 dbt_packages/
+
+# Forecasting outputs
+outputs/
